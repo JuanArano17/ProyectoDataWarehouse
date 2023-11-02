@@ -13,11 +13,8 @@
 - [ETL Process](#etl-process)
 - [Reporting](#reporting)
 - [Built With](#built-with)
-- [Contributing](#contributing)
-- [Versioning](#versioning)
 - [Authors](#authors)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -88,27 +85,13 @@ Description of the automated reporting system with details on the Excel charts t
 - [SQL Server Analysis Services (SSAS)](https://docs.microsoft.com/en-us/sql/analysis-services/sql-server-analysis-services) - Used to create the OLAP cube.
 - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) - Used for reporting and data visualization.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/JuanArano17/BankDataWarehouse/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/JuanArano17/BankDataWarehouse/tags).
-
 ## Authors
 
-- **Juan Pablo Arano** - *Programmer - Designer - Tester* - [ProfileLink](https://github.com/JuanArano17)
-- **Sofia Alejandra Prieto** - *Designer - Tester - SCRUM master* - [ProfileLink](https://github.com/sofipp)
+- **Juan Pablo Arano** - *Programmer - Designer - Tester* - [Juan Arano](https://github.com/JuanArano17)
+- **Sofia Alejandra Prieto** - *Designer - Tester - SCRUM master* - [Sofia Prieto](https://github.com/sofipp)
 
 See also the list of [contributors](https://github.com/JuanArano17/BankDataWarehouse/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Recognition of any third-party assets or code used.
-- Inspiration or research papers.
-- Any other support.
