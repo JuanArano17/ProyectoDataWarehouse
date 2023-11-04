@@ -6,11 +6,12 @@
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+  - [Steps](#steps)
 - [Data Model](#data-model)
   - [Fact Tables](#fact-tables)
   - [Dimension Tables](#dimension-tables)
 - [ETL Process](#etl-process)
+- [CUBE Process](#cube-process)
 - [Reporting](#reporting)
 - [Built With](#built-with)
 - [Authors](#authors)
@@ -43,17 +44,16 @@ Follow these instructions to get your Data Warehouse and reporting system up and
 
 ### Prerequisites
 
+- SQL Sqerver Developer Edition
 - SQL Server Management Studio (SSMS)
 - Visual Studio 2022 with SQL Server Data Tools (SSDT)
 - Microsoft Excel
 
-### Installation
-
-Detailed steps to initialize the database and deploy the solution:
-
-```
-Provide code blocks for the setup procedures and commands
-```
+### Steps
+1. Set Database model in SSMS wit sql script
+2. Configure ETL to your XML PATH and DB connection
+3. Execute ETL and confirm that the data has been inserted into the data warehouse
+4. Repeat step 2 with the CUBE and execute it
 
 ## Data Model
 
@@ -64,15 +64,16 @@ Provide code blocks for the setup procedures and commands
 
 ### Dimension Tables
 
-- `DimCustomers`: Customer-related attributes.
-- `DimAccounts`: Account-specific details.
-- `DimTime`: Time-related attributes for analysis.
+- `DimCustomer`: Customer-related attributes.
+- `DimAccount`: Account-specific details.
+- `DimDate`: Time-related attributes for analysis.
 - `DimBranches`: Bank branches details.
-- `DimEmployees`: Employee attributes relevant to transactions and balances.
+- `DimTransactionType`: Defines transaction type descriptions
+- `DimProductType`: Defines product type descriptions
 
 ## ETL Process
 
-Outline of the ETL process designed for data extraction from source systems, data cleansing, transformation, and loading into the Data Warehouse.
+## CUBE Process
 
 ## Reporting
 
