@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-87R3QSU.DataWarehouseBANCO"
+  DTS:DTSID="{307D25A9-A6D7-41FA-9158-25D6B1AAF304}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-87R3QSU;Initial Catalog=BancoUB;Integrated Security=True;Application Name=&quot;SSIS-ETL DataWarehouse-{307D25A9-A6D7-41FA-9158-25D6B1AAF304}DESKTOP-87R3QSU.DataWarehouseBANCO&quot;;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

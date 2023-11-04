@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<records>
+	<record>
+		<Transaction_Type_PK>1</Transaction_Type_PK>
+		<Transaction_Type_Description>Retiro</Transaction_Type_Description>
+	</record>
+	<record>
+		<Transaction_Type_PK>2</Transaction_Type_PK>
+		<Transaction_Type_Description>Depósito</Transaction_Type_Description>
+	</record>
+	<record>
+		<Transaction_Type_PK>3</Transaction_Type_PK>
+		<Transaction_Type_Description>Transferencia entre cuentas</Transaction_Type_Description>
+	</record>
+	<record>
+		<Transaction_Type_PK>4</Transaction_Type_PK>
+		<Transaction_Type_Description>Transferencia interbancaria</Transaction_Type_Description>
+	</record>
+	<record>
+		<Transaction_Type_PK>5</Transaction_Type_PK>
+		<Transaction_Type_Description>Pago Tarjeta de Credito</Transaction_Type_Description>
+	</record>
+</records>

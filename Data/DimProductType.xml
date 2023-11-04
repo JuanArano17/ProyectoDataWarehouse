@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<records>
+	<record>
+		<Product_Type_PK>1</Product_Type_PK>
+		<Product_Type_Description>  Plan de pension</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>2</Product_Type_PK>
+		<Product_Type_Description>Tarjeta de credito</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>3</Product_Type_PK>
+		<Product_Type_Description>  Cuenta de ahorro</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>4</Product_Type_PK>
+		<Product_Type_Description>Cuenta corriente</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>5</Product_Type_PK>
+		<Product_Type_Description>Hipoteca </Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>6</Product_Type_PK>
+		<Product_Type_Description>Deposito</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>7</Product_Type_PK>
+		<Product_Type_Description>Acciones</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>8</Product_Type_PK>
+		<Product_Type_Description>Prestamo</Product_Type_Description>
+	</record>
+	<record>
+		<Product_Type_PK>9</Product_Type_PK>
+		<Product_Type_Description>Fondos de inversion</Product_Type_Description>
+	</record>
+</records>

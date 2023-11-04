@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/13/2023 5:18:46 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-87R3QSU"
+  DTS:CreatorName="DESKTOP-87R3QSU\Juan Pablo Arano"
+  DTS:DTSID="{95F78C9C-BF8E-46F3-B963-716658F16B4F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{D2A55F59-5645-4514-A9B9-87DDB2D8F4D9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{71720D24-E5F6-41FD-9D39-0A6EFE1611A6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\DW_Dim_Account"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="DW_Dim_Account"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Dim_Account"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\DW_Dim_Account.Connections[IDbConnection]"
+                  connectionManagerID="{307D25A9-A6D7-41FA-9158-25D6B1AAF304}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-87R3QSU.DataWarehouseBANCO]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].Columns[Account_ID]"
+                      cachedDataType="ui2"
+                      cachedName="Account_ID"
+                      externalMetadataColumnId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_ID]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].Columns[Account_Type]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Account_Type"
+                      externalMetadataColumnId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_Type]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Type]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].Columns[Account_Balance]"
+                      cachedDataType="ui4"
+                      cachedName="Account_Balance"
+                      externalMetadataColumnId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_Balance]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Balance]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].Columns[last_update]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="last_update"
+                      externalMetadataColumnId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Last_Update]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[last_update]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_PK]"
+                      dataType="i4"
+                      name="Account_PK" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_ID]"
+                      dataType="i4"
+                      name="Account_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_Type]"
+                      dataType="wstr"
+                      length="50"
+                      name="Account_Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Account_Balance]"
+                      dataType="r8"
+                      name="Account_Balance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input].ExternalColumns[Last_Update]"
+                      dataType="dbTimeStamp"
+                      name="Last_Update" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\DW_Dim_Account.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DW_Dim_Account.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\DW_Dim_Account.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\DW_Dim_Account.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Poblar Dim_Account"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
+              name="Poblar Dim_Account"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.XmlSourceAdapter</property>
+                <property
+                  dataType="System.String"
+                  description="The XML data used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLData">D:\Juan Arano\OneDrive\Ub\Año4 Semestre 2\Bases De Datos II\DATAWAREHOUSE\Data\Dim_Account.xml</property>
+                <property
+                  dataType="System.String"
+                  description="The variable used by the XML source adapter to specify XML data."
+                  name="XMLDataVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how the XML source adapter gets XML data."
+                  name="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The XML schema definition used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLSchemaDefinition">D:\Juan Arano\OneDrive\Ub\Año4 Semestre 2\Bases De Datos II\DATAWAREHOUSE\Data\DimAccount.xsd</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Identifies whether or not to use inline schema."
+                  name="UseInlineSchema">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how XML integer types are mapped."
+                  name="XMLIntegerMapping"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.XmlSourceAdapter+XMLIntegerMappingConverter">0</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record]"
+                  name="record">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">record</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_PK]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_PK]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_PK]"
+                      name="Account_PK"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_ID]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_ID]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_ID]"
+                      name="Account_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_Type]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Type]"
+                      name="Account_Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Balance]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_Balance]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[Account_Balance]"
+                      name="Account_Balance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[last_update]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[last_update]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].Columns[last_update]"
+                      name="last_update"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_PK]"
+                      dataType="ui2"
+                      name="Account_PK">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_ID]"
+                      dataType="ui2"
+                      name="Account_ID">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_Type]"
+                      dataType="wstr"
+                      length="255"
+                      name="Account_Type">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[Account_Balance]"
+                      dataType="ui4"
+                      name="Account_Balance">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record].ExternalColumns[last_update]"
+                      dataType="wstr"
+                      length="255"
+                      name="last_update">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output]"
+                  isErrorOut="true"
+                  name="record Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">record</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_PK]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_PK]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_PK]"
+                      name="Account_PK" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_ID]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_ID]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_ID]"
+                      name="Account_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_Type]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_Type]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_Type]"
+                      name="Account_Type" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_Balance]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_Balance]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[Account_Balance]"
+                      name="Account_Balance" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[last_update]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[last_update]"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[last_update]"
+                      name="last_update" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_PK]"
+                      dataType="nText"
+                      name="Account_PK" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_ID]"
+                      dataType="nText"
+                      name="Account_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_Type]"
+                      dataType="nText"
+                      name="Account_Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[Account_Balance]"
+                      dataType="nText"
+                      name="Account_Balance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record Error Output].ExternalColumns[last_update]"
+                      dataType="nText"
+                      name="last_update" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[record]"
+              endId="Package\Data Flow Task\DW_Dim_Account.Inputs[ADO NET Destination Input]"
+              name="record"
+              startId="Package\Data Flow Task\Poblar Dim_Account.Outputs[record]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="206.318181818182,124.136363636364" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Data Flow Task\Poblar Dim_Account"
+          TopLeft="2182,230.769230769231" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Data Flow Task\DW_Dim_Account"
+          TopLeft="2187,345.769230769231" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[record]"
+          TopLeft="2271.5,272.769230769231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\DW_Dim_Account">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

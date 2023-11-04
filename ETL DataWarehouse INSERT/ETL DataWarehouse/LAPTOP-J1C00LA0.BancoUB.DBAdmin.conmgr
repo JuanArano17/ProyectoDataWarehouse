@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-J1C00LA0.BancoUB.DBAdmin"
+  DTS:DTSID="{FC33C3D8-8C30-4929-83CC-CA52F7BCE777}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=LAPTOP-J1C00LA0;User ID=DBAdmin;Initial Catalog=BancoUB;Application Name=SSIS-ETL DataWarehouse-{FC33C3D8-8C30-4929-83CC-CA52F7BCE777}LAPTOP-J1C00LA0.BancoUB.DBAdmin;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwvnRNtR3kki12r4rnBM1BgAAAAACAAAAAAAQZgAAAAEAACAAAABEBVmjZpXpOg+w68Rbvdo21xSG2VSIRks6/YKjv6PiPAAAAAAOgAAAAAIAACAAAADojWadbyfXBcd44pNQg4PlXAEwzqsHD4xm+hrSYvGf9YAAAABtbhqJ0d96O+W6f0PQRqHwhv6EIdH+xbpRwMnic2FICvDzTaA6/0z3eDnccg5hqbPfRWR+JimBekR/uW1341NqrSgBXgD4FC8zo/ZBi8Qe/iKUoPEE2k/osJDeqJIgtRiuWKXfJBIWWu3GN4+4+0+GVahZ3X2VPboOuTNDBu54j0AAAABRlKpDQxemnRe5W0LoY65NS96debMYcm+JiEZC9Vl8lQA07A+rBb5CzTZckd239pnRazZ3pRoozJiRKJiD9BS+</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

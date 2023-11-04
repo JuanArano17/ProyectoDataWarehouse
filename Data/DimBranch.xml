@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<records>
+	<record>
+		<Branch_PK>1</Branch_PK>
+		<Branch_ID>496</Branch_ID>
+		<Branch_Name>132-245 Tempor Rd.</Branch_Name>
+		<Branch_Location>Ribeirão Preto</Branch_Location>
+		<Branch_Manager>Sybill Luna</Branch_Manager>
+		<last_update>2022-11-27</last_update>
+	</record>
+	<record>
+		<Branch_PK>2</Branch_PK>
+		<Branch_ID>297</Branch_ID>
+		<Branch_Name>Ap #690-6167 Velit St.</Branch_Name>
+		<Branch_Location>Gijón</Branch_Location>
+		<Branch_Manager>Wendy Harper</Branch_Manager>
+		<last_update>2022-10-7</last_update>
+	</record>
+	<record>
+		<Branch_PK>3</Branch_PK>
+		<Branch_ID>299</Branch_ID>
+		<Branch_Name>470-6873 Magna Street</Branch_Name>
+		<Branch_Location>Vị Thanh</Branch_Location>
+		<Branch_Manager>Baker Wyatt</Branch_Manager>
+		<last_update>2022-5-10</last_update>
+	</record>
+	<record>
+		<Branch_PK>4</Branch_PK>
+		<Branch_ID>387</Branch_ID>
+		<Branch_Name>Ap #835-5479 Vestibulum Road</Branch_Name>
+		<Branch_Location>Bhir</Branch_Location>
+		<Branch_Manager>Chaim Dalton</Branch_Manager>
+		<last_update>2022-12-30</last_update>
+	</record>
+	<record>
+		<Branch_PK>5</Branch_PK>
+		<Branch_ID>47</Branch_ID>
+		<Branch_Name>144-4790 Imperdiet, Rd.</Branch_Name>
+		<Branch_Location>Dublin</Branch_Location>
+		<Branch_Manager>Barbara Montgomery</Branch_Manager>
+		<last_update>2022-8-27</last_update>
+	</record>
+	<record>
+		<Branch_PK>6</Branch_PK>
+		<Branch_ID>197</Branch_ID>
+		<Branch_Name>Ap #445-7370 Orci. Street</Branch_Name>
+		<Branch_Location>Gapan</Branch_Location>
+		<Branch_Manager>Quinlan Crane</Branch_Manager>
+		<last_update>2022-11-28</last_update>
+	</record>
+	<record>
+		<Branch_PK>7</Branch_PK>
+		<Branch_ID>329</Branch_ID>
+		<Branch_Name>Ap #436-4308 Pellentesque Rd.</Branch_Name>
+		<Branch_Location>La Rochelle</Branch_Location>
+		<Branch_Manager>Shafira Forbes</Branch_Manager>
+		<last_update>2022-8-24</last_update>
+	</record>
+	<record>
+		<Branch_PK>8</Branch_PK>
+		<Branch_ID>395</Branch_ID>
+		<Branch_Name>Ap #936-8560 Interdum Ave</Branch_Name>
+		<Branch_Location>Gdańsk</Branch_Location>
+		<Branch_Manager>Belle Alexander</Branch_Manager>
+		<last_update>2022-12-19</last_update>
+	</record>
+	<record>
+		<Branch_PK>9</Branch_PK>
+		<Branch_ID>130</Branch_ID>
+		<Branch_Name>P.O. Box 601, 9530 Libero Av.</Branch_Name>
+		<Branch_Location>Sonnino</Branch_Location>
+		<Branch_Manager>Germaine Robinson</Branch_Manager>
+		<last_update>2022-11-18</last_update>
+	</record>
+	<record>
+		<Branch_PK>10</Branch_PK>
+		<Branch_ID>147</Branch_ID>
+		<Branch_Name>Ap #175-6648 Hendrerit Avenue</Branch_Name>
+		<Branch_Location>Astore</Branch_Location>
+		<Branch_Manager>Cain Williams</Branch_Manager>
+		<last_update>2022-1-5</last_update>
+	</record>
+</records>
